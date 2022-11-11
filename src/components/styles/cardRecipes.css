@@ -39,6 +39,9 @@
 }
 
 @media screen and ( min-width : 471px ) {
+  .renderCards {
+    align-items: center;
+  }
 
   .recipeCard {
     border-radius: 20px;

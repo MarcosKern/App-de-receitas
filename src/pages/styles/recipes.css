@@ -36,7 +36,7 @@
   background-color: #efefef;
   flex-wrap: wrap;
   gap: 0.8em;
-  justify-content: space-between;
+  justify-content: space-around;
   min-height: 70vh;
   overflow-y: hidden;
   padding: 0.5em;
