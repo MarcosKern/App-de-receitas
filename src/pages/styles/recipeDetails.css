@@ -1,3 +1,11 @@
+.recipeDetailsContainer {
+  min-height: 100vh;
+}
+
+.detailsComponent {
+  flex: 1;
+}
+
 .recipeDetails {
   background-color: #fdfdfd;
   min-height: 100vh;

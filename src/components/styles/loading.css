@@ -1,8 +1,35 @@
 .loading {
-  align-items: center;
+  flex: 1;
+  margin: auto;
   display: flex;
-  height: 70vh;
+  align-items: center;
   justify-content: center;
-  overflow: hidden;
-  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(90deg, #c168417a 0%, #fd841f 35%, #fd841f 65%, #c168417a 100%);
+  animation: gradient 2s linear infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  background-clip: text;
+}
+
+.loading p {
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  font-family: Kaushan Script , cursive;
+  color: transparent;
+  margin-inline: 20px;
+  font-weight: 800;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+
+  100% {
+      background-position: 100% 100%;
+  }
 }

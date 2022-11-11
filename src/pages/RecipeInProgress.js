@@ -75,7 +75,7 @@ function RecipeInProgress({ match }) {
   };
 
   return (
-    <div>
+    <div className="flexContainer direction recipeDetailsContainer">
       {copyed && (
         <LinkCopied />
       )}

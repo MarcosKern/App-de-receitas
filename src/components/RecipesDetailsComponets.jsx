@@ -46,7 +46,7 @@ function RecipesDetailsComponents() {
   }, [recipeDetail, pathname, setGlobalIngrd, globalId, setFavorited]);
 
   return (
-    <div className="flexContainer direction">
+    <div className="flexContainer direction detailsComponent">
       <div className="detailsBtn flexContainer direction" ref={ parent }>
         <button
           className="togleFavMenuBtn"

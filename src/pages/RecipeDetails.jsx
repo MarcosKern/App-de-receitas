@@ -9,6 +9,7 @@ import LinkCopied from '../components/LinkCopied';
 import RecommendationCard from '../components/RecommendationCard';
 import { readlocalStorage } from '../services/hadleStorage';
 import './styles/recipeDetails.css';
+import Loading from '../components/Loading';
 
 const maxRecommendation = 6;
 
@@ -55,14 +56,18 @@ function RecipeDetails({ match }) {
   }, [id, pathname, setIsLoading, setRecipeDetail, setGlobalId, setRec]);
 
   return (
-    <div>
-      {!isLoading && (
-        <div>
-          {copyed && <LinkCopied />}
-          {(recipeDetail.length > 0) && <RecipesDetailsComponents />}
-          <RecommendationCard />
-        </div>
-      )}
+    <div className="flexContainer direction recipeDetailsContainer">
+      {
+        isLoading
+          ? <Loading />
+          : (
+            <div>
+              {copyed && <LinkCopied />}
+              {(recipeDetail.length > 0) && <RecipesDetailsComponents />}
+              <RecommendationCard />
+            </div>
+          )
+      }
       <button
         data-testid="start-recipe-btn"
         className="startRecipes"
