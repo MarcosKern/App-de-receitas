@@ -4,7 +4,7 @@ import { readlocalStorage, saveLocalStore } from '../services/hadleStorage';
 import recipeContext from '../context/recipeContext';
 
 export default function CheckIngredients() {
-  const { globalIngrd, setIsDesable, globalId } = useContext(recipeContext);
+  const { globalIngrd, setIsDisabled, globalId } = useContext(recipeContext);
   const [checkedList, setCheckedList] = useState([]);
 
   const history = useHistory();
@@ -36,9 +36,9 @@ export default function CheckIngredients() {
       saveLocalStore('inProgressRecipes', prevState);
     }
     if (checkedList.length === globalIngrd.length) {
-      setIsDesable(false);
+      setIsDisabled(false);
     } else {
-      setIsDesable(true);
+      setIsDisabled(true);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [checkedList]);

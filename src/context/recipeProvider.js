@@ -27,7 +27,7 @@ function RecipeProvider({ children }) {
   const [headerTitle, setHeaderTitle] = useState('');
   const [globalIngrd, setGlobalIngrd] = useState([]);
   const [globalId, setGlobalId] = useState('');
-  const [isDesable, setIsDesable] = useState(true);
+  const [isDisabled, setIsDisabled] = useState(true);
   const [copyed, setCopyed] = useState(false);
   const [favorited, setFavorited] = useState(false);
   const [recipes, setRecipes] = useState([]);
@@ -140,8 +140,8 @@ function RecipeProvider({ children }) {
     handleFavorite,
     recipeDetail,
     showSearchBtn,
-    isDesable,
-    setIsDesable,
+    isDisabled,
+    setIsDisabled,
     setShowSearchBtn,
     headerTitle,
     userInfo,
@@ -180,7 +180,7 @@ function RecipeProvider({ children }) {
     setShowSearchBtn,
     copyUrl,
     history,
-    isDesable,
+    isDisabled,
     copyed,
     globalId,
     setGlobalId,
