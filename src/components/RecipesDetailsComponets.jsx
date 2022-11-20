@@ -149,20 +149,21 @@ function RecipesDetailsComponents() {
                 </p>
                 {
                   pathname.includes('meals')
-                    && (
-                      <iframe
-                        data-testid="video"
-                        src={ e.strYoutube.replace('watch?v=', 'embed/') }
-                        title="YouTube video player"
-                        allow="accelerometer;
-                        autoplay;
-                        clipboard-write;
-                          encrypted-media;
-                          gyroscope;
-                            picture-in-picture"
-                        allowFullScreen
-                      />
-                    )
+                    && e.strYoutube !== ''
+                      && (
+                        <iframe
+                          data-testid="video"
+                          src={ e.strYoutube.replace('watch?v=', 'embed/') }
+                          title="YouTube video player"
+                          allow="accelerometer;
+                          autoplay;
+                          clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                              picture-in-picture"
+                          allowFullScreen
+                        />
+                      )
                 }
               </div>
             </div>
