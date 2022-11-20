@@ -18,10 +18,12 @@ import './styles/recipes.css';
 const recipesNumberRequest = 12;
 
 function Recipes() {
-  const { renderMeals, renderDrinks, isLoading,
+  const {
+    renderMeals, renderDrinks, isLoading,
     mirrorMeals, mirrorDrinks, setRenderMeals, setRenderDrinks,
     mealsCategories, drinkCategories, setIsLoading,
-    setHeaderTitle, setShowSearchBtn } = useContext(recipeContext);
+    setHeaderTitle, setShowSearchBtn,
+  } = useContext(recipeContext);
   const [clickControl, setClickControl] = useState(false);
   const [categoryURL, setCategoryURL] = useState('');
   const [pageRouteInfo, setPageRouteInfo] = useState('');

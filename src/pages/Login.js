@@ -51,7 +51,7 @@ function Login() {
           <label htmlFor="email">
             <input
               data-testid="email-input"
-              placeholder="Digite seu Email"
+              placeholder="Email"
               onChange={ handlEmail }
               value={ email }
               type="text"
@@ -62,7 +62,7 @@ function Login() {
           <label htmlFor="password">
             <input
               data-testid="password-input"
-              placeholder="Digite sua Senha"
+              placeholder="Password"
               onChange={ handlePassword }
               value={ password }
               type="password"
@@ -77,7 +77,7 @@ function Login() {
             onClick={ handleBtn }
             disabled={ isBtnDisabled }
           >
-            Entrar
+            Login
           </button>
         </div>
       </form>
